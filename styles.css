@@ -6,11 +6,18 @@ body {
 
 a {
   color: black;
-  font-size: 14px;
   text-decoration: none;
 }
 
 nav {
+  font-family: 'Roboto', sans-serif;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 13px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -21,6 +28,7 @@ nav {
 }
 
 footer {
+  font-size: 14px;
   background-color: #f2f2f2;
   position: absolute;
   bottom: 0;
@@ -29,7 +37,22 @@ footer {
 }
 
 .footer-border {
+  font-size: 15px;
+  color: #70757a;
+  padding: 15px;
   border-bottom: 1px solid #dadce0;
+}
+
+.footer-bar {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links {
+  color: #70757a;
+  padding: 15px;
 }
 
 input {
@@ -52,6 +75,13 @@ input {
 .search-bar {
   position: fixed;
   top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  position: fixed;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
