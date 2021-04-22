@@ -1,7 +1,17 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 400px;
+}
+
 body {
   margin: 0;
+  padding: 0;
   height: 100%;
+  min-width: 400px;
   font-family: arial, sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -13,15 +23,51 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  font-size: small;
-  width: 100%;
+.main {
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+  height: 60px;
+}
+
+.nav-bar {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.nav-links {
+  font-size: small;
+  display: flex;
+  float: right;
+  padding-right: 10px;
 }
 
 .nav-spacing {
   margin-left: 15px;
+}
+
+.sign-in {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 9px 25px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.sign-in:hover {
+  text-decoration: none;
+  background: #2d7ee7;
 }
 
 footer {
@@ -36,12 +82,12 @@ footer {
 .footer-border {
   font-size: 15px;
   color: #70757a;
-  padding: 15px;
+  padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
 }
 
 .footer-bar {
-  padding: 15px 30px;
+  padding: 11px 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
